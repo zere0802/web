@@ -1,0 +1,118 @@
+body{
+  background: rgb(212, 137, 178) !important;
+}
+
+:root{
+  --bg:#fff1f6;
+  --card:#ffffff;
+  --border:#fbcfe8;
+  --text:#4b5563;
+  --muted:#9ca3af;
+  --primary:#ec4899;
+  --primary-soft:#f9a8d4;
+  --danger:#f43f5e;
+  --radius:16px;
+}
+
+body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", system-ui;
+}
+
+/* NAVBAR */
+.navbar{
+  background:white !important;
+  border-bottom:1px solid var(--border);
+}
+
+.navbar .navbar-brand{
+  color: var(--primary) !important;
+  font-weight:700;
+}
+
+/* CARDS */
+.card{
+  background: var(--card);
+  border:1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(236,72,153,.08);
+}
+
+/* TEXT */
+.text-muted{
+  color: var(--muted) !important;
+}
+
+/* INPUT */
+.form-control{
+  border-radius:12px;
+  border:1px solid var(--border);
+}
+
+.form-control:focus{
+  border-color: var(--primary);
+  box-shadow:0 0 0 .15rem rgba(236,72,153,.15);
+}
+
+/* BUTTON */
+.btn{
+  border-radius:12px;
+  font-weight:600;
+}
+
+.btn-primary{
+  background: var(--primary);
+  border:none;
+}
+
+.btn-primary:hover{
+  background:#db2777;
+}
+
+/* OUTLINE */
+.btn-outline-primary{
+  border-color: var(--primary-soft);
+  color: var(--primary);
+}
+
+.btn-outline-primary:hover{
+  background: var(--primary-soft);
+  color:white;
+}
+
+.btn-outline-danger:hover{
+  background: rgba(244,63,94,.12);
+}
+
+.btn-outline-success:hover{
+  background: rgba(34,197,94,.12);
+}
+
+/* TASK CARD */
+.task-card{
+  background:white;
+  border:1px solid var(--border);
+  border-radius:14px;
+  transition:.15s;
+}
+
+.task-card:hover{
+  transform:translateY(-2px);
+  border-color:#f9a8d4;
+}
+
+/* BADGE */
+.badge{
+  border-radius:999px;
+  font-weight:600;
+}
+
+/* LINKS */
+a{
+  color:#db2777;
+  text-decoration:none;
+}
+a:hover{
+  text-decoration:underline;
+}
